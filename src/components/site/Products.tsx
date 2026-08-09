@@ -74,10 +74,10 @@ export function Products() {
                 </thead>
                 <tbody>
                   {supremeRows.map((r) => (
-                    <tr key={r[0] + r[1]} className="border-t border-border align-top">
-                      <td className="px-4 py-3 font-semibold">{r[0]}</td>
-                      <td className="px-4 py-3 font-mono text-primary">{r[1]}</td>
-                      <td className="px-4 py-3 text-muted-foreground">{r[2]}</td>
+                    <tr key={r.name + r.code} className="border-t border-border align-top">
+                      <td className="px-4 py-3 font-semibold">{r.name}</td>
+                      <td className="px-4 py-3 font-mono text-primary">{r.code}</td>
+                      <td className="px-4 py-3 text-muted-foreground">{r.features}</td>
                     </tr>
                   ))}
                 </tbody>
