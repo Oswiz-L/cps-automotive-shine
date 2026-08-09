@@ -3,12 +3,28 @@ import clearcoats from "@/assets/clearcoats.png.asset.json";
 import profleet from "@/assets/profleet.png.asset.json";
 import rapid from "@/assets/rapid.png.asset.json";
 
-const supremeRows = [
-  ["Primer 1K", "Primario acrílico", "Fácil de lijar y de secado rápido, bajo COV"],
-  ["Basecoat", "—", "Base de color de alta calidad"],
-  ["Clearcoat 2K Uretano HS", "S-2020 (2:1:1)", "Máximo brillo, filtros UV, anti-rayado"],
-  ["Clearcoat 2K Uretano MS", "S-2022 (4:1:1)", "Máximo brillo, filtros UV, anti-rayado"],
-  ["Clearcoat 2K Uretano MS", "S-2024 (4:1)", "Buen brillo, filtros UV, anti-rayado"],
+const supremeRows: { name: string; code: string; features: string }[] = [
+  {
+    name: "Primer 1K",
+    code: "Primario acrílico",
+    features: "Fácil de lijar y de secado rápido, bajo COV",
+  },
+  { name: "Basecoat", code: "—", features: "Base de color de alta calidad" },
+  {
+    name: "Clearcoat 2K Uretano HS",
+    code: "S-2020 (2:1:1)",
+    features: "Máximo brillo, filtros UV, anti-rayado",
+  },
+  {
+    name: "Clearcoat 2K Uretano MS",
+    code: "S-2022 (4:1:1)",
+    features: "Máximo brillo, filtros UV, anti-rayado",
+  },
+  {
+    name: "Clearcoat 2K Uretano MS",
+    code: "S-2024 (4:1)",
+    features: "Buen brillo, filtros UV, anti-rayado",
+  },
 ];
 
 const supremeFeatures = [
